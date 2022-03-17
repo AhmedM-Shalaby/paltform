@@ -1,0 +1,22 @@
+.ana{
+    background-image: url("../imgs/80198790_688507908343003_3970899274643800064_n.jpg") ;
+    background-color: #00ff00;
+    background-color: rgb(117, 6, 6) ;
+    /* background-color: rgb(red, green, blue); */
+    background-repeat: no-repeat ;
+    /* fi mnha (repeat - repeat x - repeat y ) */
+    background-attachment: fixed ;
+    /* fi mnha scroll  bos le el m3na*/
+    /* background-size:cover  ; */
+    /* background-size:contain  ; */
+    background-size:100px 200px  ;
+    /* background-position:top center; */
+    /* background-position:right ; */
+    /* background-size: 600px 800px ; */
+    /* background-size: auto ; */
+    /* width: 50%; */
+}           
+.p{
+    color:rgb(255,255,255);
+    padding: 10px 20px 10px 20px;
+}

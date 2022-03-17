@@ -1,0 +1,27 @@
+.border{
+background-color: rgb(0, 0, 0);
+width: 600px; 
+height: 40px;
+margin: auto;
+border: 10px solid red;
+outline: 10px solid #0000ff;
+/* display: none; */
+/* fe el display: none */
+visibility: hidden;
+}
+.text{
+    color: red;
+}
+._3fret{
+    background-color: black;
+    display: block;
+    color: #ff0000;
+    margin: auto;
+    width: 211px;
+    height: 21px;
+
+}
+/* 
+    ال ملاحظات فى ال display: none; بتشيل مكان العنصر element او
+    el (visibility) bt7f9 el mkan bta3 el element bos 3la code
+*/

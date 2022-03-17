@@ -1,0 +1,34 @@
+div span{
+    display: block;
+}
+/* el function dh asmha (nesting) dh 7aga gwa 7aga athly b2a hahaha */
+
+p{
+    display: block;
+}
+
+div{
+    display: inline-block;
+}
+
+.bas{
+    width: 500px;
+    height: 200px;
+    overflow: scroll;
+    display: inline-block;
+}
+/* fi mnha EL (hidden) el stander bt3ha (visible) 
+w fi el (scroll) w fi el (auto)3la 7sab lw m7tag y3mal scroll hyaml
+w tb3an mwgwd el overflow x and y    */
+
+div,p,span{
+    background-color: black;
+    color:red ;
+    padding: 10px;
+    margin: auto;
+}
+/* el function asmha (guoup selector) bos 3la code  */
+/* ei el dimension y3ny ab3ad */
+
+
+

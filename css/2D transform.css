@@ -1,0 +1,182 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.skew{
+    width: fit-content;
+    color: #fff;
+    position: relative;
+    padding: 10px;
+    margin: 30px auto;
+
+}
+
+.skew::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    transform: skew(20deg);
+    z-index: -1;
+}
+
+.matrix{
+    width: 400px;
+    height: 200px;
+    background-color: #aaa;
+    margin: 30px auto;
+    color: #fff;
+    transform: matrix(1 , 0.1234, 0 , 1 , 0 ,0);
+    line-height: 200px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.origin {
+    margin: 200px auto;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255 0 0 / 39%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    transform-origin: 50% 50%;
+    transform: rotate(0deg);
+    position: relative;
+}
+
+.origin .origin-one{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #ddd;
+    transform: translate(-50% , -50%);
+}
+
+.rotate-3D{
+    width: 200px;
+    height: 200px;
+    margin: 30px auto;
+    background-color: rgb(255 0 0 / 39%);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    transform: rotate3d(0 , 1 ,0 ,90deg);
+    transform-origin: left top;
+}
+
+.parent{
+    width: 600px;
+    height: 600px;
+    background-color: #aaa;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 100px;
+    perspective-origin: left bottom;
+}
+
+.perspective{
+    width: 400px;
+    height: 400px;
+    background-color: #ddd;
+    transform: translate3d(0px, 0px, -111000px);
+    transition: 2s;
+    line-height: 400px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+.boss{
+    margin: 40px auto;
+    width: 300px;
+    perspective: 800px;
+    perspective-origin: center left;
+}
+
+.parent-two{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1s;
+    transform-origin: center left;
+}
+
+.parent-two:hover{
+    transform: translateX(100%) rotateY(-180deg);
+}
+
+.front{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bolder;
+    backface-visibility: hidden;
+}
+
+.one{
+    background-color: #333;
+}
+
+.two{
+    background-color: #ddd;
+    transform: rotateY(180deg);
+}
+
+/*
+  [skew = skew x , skew y]
+
+  matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())
+
+  transform-origin
+  Syntax
+  Default Values => 50% 50% 0
+  2D Transform => transform-origin(X, Y)
+  3D Transform => transform-origin(X, Y, Z)
+  X-Axis
+  - CSS Unit [px, em, rem]
+  - %
+  - Keyword
+  -- Left = 0%
+  -- Center = 50%
+  -- Right = 100%
+  Y-Axis
+  - CSS Unit [px, em, rem]
+  - %
+  - Keyword
+  -- Top = 0%
+  -- Center = 50%
+  -- Bottom = 100%
+
+  -transform 3D for rotate[x - y - z]
+
+-  [perspective]
+-  [perspective-origin]
+
+-transform-style= default value = flat =>preserve 3D
+
+-backface-visibility=hidden el default value= visible
+*/

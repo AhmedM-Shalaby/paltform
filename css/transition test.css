@@ -1,0 +1,60 @@
+.parent {
+  background-color: #333;
+  width: 400px;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  transition-duration: 0.5s;
+}
+
+.parent .boss {
+  background-color: #aaa;
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  margin-left: 90px;
+  transition-delay: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.parent .boss:hover {
+  margin-top: 10px;
+  color: red;
+}
+
+.parent:hover {
+  margin-top: 0;
+}
+
+.one {
+  text-align: center;
+  color: transparent !important;
+  background-color: #aaa !important;
+  border: none !important;
+  font-size: 0px !important;
+  font-weight: bold;
+  width: 400px;
+  position: relative;
+}
+
+.one::before {
+  content: "elzero";
+  color: black;
+  position: absolute;
+  font-size: 20px;
+  left: 42%;
+  top: 5px;
+}
+
+:root {
+  --mainColor: #009688;
+  --mainPadding: 10px;
+}
+
+.two {
+  border: 1px solid var(--mainColor, #000);
+  color: var(--mainColor, #f00);
+  padding: var(--mainPadding);
+  width: 400px;
+}

@@ -1,0 +1,37 @@
+div .child .title{
+    color: red;
+}
+
+div .title{
+    color: blue;
+}
+
+/* div p{
+    color: green;
+}
+
+div.title{
+    color: green;
+} */
+
+div p,div.title{
+    color: green;
+}
+
+
+.one,.two,.three,.four{
+    background-color: red;
+    width: 400px;
+    margin: 10px;
+
+}
+
+.four{
+    height: 50px;
+    overflow: hidden;
+}
+
+p{
+    color: black;
+    display: block;
+}

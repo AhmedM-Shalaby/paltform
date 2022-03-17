@@ -1,0 +1,51 @@
+.one {
+  background-color: #333 !important;
+  color: #fff;
+  transition-duration: 2s;
+  transition-property: padding, font-weight, margin;
+  transition-delay: 0.5s;
+  width: 100px;
+}
+
+.one:hover {
+  font-weight: bold;
+  margin: 20px;
+  text-align: center;
+  padding: 20px;
+  width: 400px;
+  font-size: 40px;
+}
+
+.parent {
+  width: 500px;
+  background-color: #333;
+  height: 300px;
+}
+
+.two {
+  width: 250px;
+  height: 140px;
+  background-color: #797979;
+  margin-bottom: 20px;
+}
+
+.three {
+  width: 250px;
+  height: 140px;
+  background-color: #000000;
+  margin-top: 20px;
+}
+
+:root {
+  --maincolor: #333;
+  --mainpadding: 10px;
+}
+
+p {
+  background-color: #aaa;
+  width: 400px;
+  color: var(--maincolor);
+  padding: var(--mainpadding);
+  font-size: 40px;
+  text-align: center;
+}

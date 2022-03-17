@@ -1,0 +1,29 @@
+div{
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    padding: 30px;
+}
+
+.one{
+    border: 5px solid red;
+    outline: black solid 5px;
+
+}
+
+.two{
+    border-top: 5px solid blue;
+    border-bottom: 5px solid blue;
+    border-left: 5px solid green;
+    border-right: 5px solid green;
+    outline: black solid 5px;
+
+}
+
+.three{
+    border-top: 5px dashed rgb(255, 0, 0);
+    border-bottom: 5px dashed blue;
+    border-left: 5px dashed yellow;
+    border-right: 5px dashed green;
+    outline: black solid 5px;
+}

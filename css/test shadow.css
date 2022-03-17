@@ -1,0 +1,63 @@
+.shadow{
+    text-shadow: 1px 1px 0px red,
+    2px 2px 0px rgb(38, 0, 255),
+    3px 3px 0px rgb(140, 0, 255);
+    width: 200px;
+    margin: auto;
+}
+
+.one{
+    text-transform: uppercase;
+    width: 200px;
+    margin: auto;
+    color: red;
+
+}
+
+.two{
+    text-transform: capitalize;
+    width: 200px;
+    margin: auto;
+    color: rgb(71, 165, 110);
+
+}
+
+.three{
+    text-transform: lowercase;
+    width: 200px;
+    margin: auto;
+    color: rgb(27, 96, 160);
+}
+
+.four{
+    width: 400px;
+    color: rgb(74, 34, 110);
+    margin: auto;
+    word-break: break-word;
+
+}
+
+.five{
+    width: 400px;
+    margin: auto;
+    color: blueviolet;
+
+}
+
+.six{
+    width: 400px;
+    margin: auto;
+    color: cyan;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.link{
+    background-color: cyan;
+    color: #eee;
+    text-decoration:none ;
+    padding: 10px;
+    margin: auto;
+    border-bottom: 5px solid rgb(18, 73, 73) ;
+}

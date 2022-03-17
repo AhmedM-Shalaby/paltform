@@ -1,0 +1,41 @@
+.parent{
+    background-color: black;
+    padding: 10px;
+
+}
+
+.parent div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: rgb(255, 179, 14);
+    width: calc( (100% - 5%) / 4) ;
+    float: left;
+    margin-left: 1%;
+    
+}
+
+.clear{
+        clear: both;
+    }
+    /* el (float) bet3wam bos 3la el code bas el mham el clear m3 el float */
+    
+    /* el(calculation =calc fi width)hya alh bas  
+    (el m3dlh dh mhmah)
+    Content Width Is: 100%
+    6 Spaces  10px * 6 => 60px From Content Width
+    100% - 60px Available Space
+    5 Elements The Width Is: (100% - 60px) / 5
+    */
+
+.two{
+        background-color: rgb(129, 109, 113,0.50);
+
+    }
+
+.three{
+    background-color: red;
+    opacity: 0.5;
+    /* el (opacity) hya el 4gafyh be el klam */
+}
+

@@ -1,0 +1,283 @@
+.assign-one{
+    width: 50px;
+    height: 50px;
+    margin: 30px auto;
+    border-radius: 50%;
+    border: 5px solid #d82468;
+    border-left-color: transparent;
+    position: relative;
+    animation-name: load-one;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.assign-one::before{
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 60px;
+    height: 60px;
+    border: 5px solid #2490fd;
+    border-right-color: transparent;
+    border-radius: 50%;
+}
+
+
+.assign-one::after{
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 70px;
+    height: 70px;
+    border: 5px solid #fca200;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+}
+
+
+@keyframes load-one{
+to{
+    transform: rotate(360deg);
+}
+}
+
+.assign-one:hover{
+animation-play-state: paused;
+}
+
+
+.assign-two{
+    width: 100px;
+    height: 100px;
+    margin: 40px auto;
+    position: relative;
+}
+
+.assign-two .one{
+    width: 50px;
+    height: 50px;
+    margin: 30px auto;
+    border-radius: 50%;
+    border: 5px solid #2490fd;
+    border-bottom-color: transparent;
+    animation-name: load-two;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+}
+
+.assign-two .two{
+    position: absolute;
+    top: -8px;
+    left: 12px;
+    width: 65px;
+    height: 65px;
+    border: 5px solid #fca200;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    animation-name: load-two;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0.4s;
+    animation-play-state: paused;
+}
+
+.assign-two .three{
+    position: absolute;
+    top: -16px;
+    left: 4.5px;
+    width: 80px;
+    height: 80px;
+    border: 5px solid #000;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    animation-name: load-two;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0.6;
+    animation-play-state: paused;
+}
+
+.assign-two:hover div{
+    animation-play-state: running;
+}
+
+@keyframes load-two{
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+span{
+    width: 50px;
+    height: 50px;
+    margin: 30px auto;
+    background-color: #e1e1e9;
+    border: 5px solid #000;
+    border-left-color: transparent;
+    border-radius: 50%;
+    display: block;
+    animation-name: load-three;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes load-three{
+    to{
+        transform: rotate(-360deg);
+    }
+}
+
+.parent{
+    width: 500px;
+    display: flex;
+    margin: 40px auto;
+}
+
+
+.assign-three{
+    margin: 40px auto;
+    display: inline-grid;
+    grid-template-columns: repeat( 3,60px);
+    grid-template-rows: repeat(7,60px);
+    position: relative;
+}
+
+.assign-three .one{
+    grid-column: 1/4;
+    grid-row: 1;
+    background-color: #000;
+}
+
+.assign-three .two{
+    grid-column: 1/4;
+    grid-row: 4;
+    background-color: #000;
+}
+
+
+.assign-three .three{
+    grid-column: 1/4;
+    grid-row: 7;
+    background-color: #000;
+}
+
+.assign-three .four{
+    grid-column: 1;
+    grid-row: 1/8;
+    background-color: #000;
+}
+
+.assign-three-two{
+    display: inline-grid;
+    margin: 40px auto;
+    grid-template-columns: repeat( 3,60px);
+    grid-template-rows: repeat( 7,60px);
+    position: relative;
+}
+
+
+.assign-three-two .one{
+    grid-column: 1;
+    grid-row: 1/8;
+    background-color: #000;
+}
+
+
+
+.assign-three-two .two{
+    grid-column: 1/4;
+    grid-row: 7;
+    background-color:#000;
+}
+
+
+.assign-three-two::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #fea604;
+    margin: 10px;
+    bottom: 0;
+    right: 0;
+    animation-name: load-animation-one;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+}
+
+@keyframes load-animation-one{
+    0%{
+        transform: translateX(0px);
+    }
+    10%{
+        transform: translateX(-120px);
+    }
+    20%{
+        transform: translate(-120px,-360px);
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        transform: translate(-120px,-360px);
+        opacity: 0;
+    }
+}
+
+.assign-three::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #fea604;
+    margin: 10px;
+    top: 0;
+    right: 0;
+    animation-name: load-animation-two;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-delay: 4s;
+    animation-timing-function: linear;
+}
+
+@keyframes load-animation-two{
+    0%{
+        transform: translateX(0px);
+    }
+    10%{
+        transform: translatex(-120px);
+    }
+    20%{
+        transform: translate(-120px,180px);
+    }
+    30%{
+        transform: translate(0px,180px);
+    }
+    40%{
+        transform: translate(-120px,180px);
+    }
+    50%{
+        transform: translate(-120px,360px);
+    }
+    60%{
+        transform: translate(0,360px);
+    }
+    70%{
+        transform: translate(-120px,360px);
+    }
+    80%{
+        transform: translate(-120px,0px);
+    }
+}

@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    background-color: #333;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+/*
+  CSS Selectors
+  - *
+  - Element => [p, div, h2]
+  - Element OtherElement => div p
+  - .class-name
+  - #id-name
+  - .parent .child
+  - .class-one.class-two
+  - .class-name div, .class-name p
+  - Element.class-name => p.class-name
+  - .parent > .child => Direct Child
+  - part 2
+    CSS Selectors
+  - Element + Other Element => [div + p]
+  - Element ~ Other Elements => [p ~ div]
+  - [Attribute]
+  - Element[Attribute]
+  - [Attribute=Value]
+  - Element[Attribute=Value] => input[type="submit"]
+  - [Attribute~=Value] => Contains A Word
+  - [Attribute*=Value] => Contains A Atring
+  - [Attribute^=Value] => Start With A String
+  -part 3
+  /*
+  CSS Selectors
+  - :first-child
+  - :last-child
+  - :first-of-type
+  - :last-of-type
+  - :only-child
+  -part 4 
+    CSS Selectors
+  - :not(Selectors)
+  - :nth-child(n)
+  - :nth-last-child(n)
+  - :nth-of-type(n)
+  - :nth-last-of-type(n)
+  -part 5 
+   CSS Selectors
+  - :root
+  - :checked
+  - :empty
+  - :disabled
+  - :required
+  - :focus
+  - ::selection
+  - ::placeholder
+*/
+
+
+/* div.main.red{
+    color: red;
+}
+
+
+div + .child:last-child{
+  color: red;
+}
+
+.parent .baby:only-child{
+  color: red;
+} */
+
+/* div:nth-last-of-type(6)[title="Elzero"],div[title="Hello"],div[title="HTML"]{color:red} */
+
+/* div:nth-of-type(2) div[title="Elzero"]{
+  color: red;
+} */
+
+/* div:not(.no-need) div:nth-last-of-type(2){
+  color: red;
+} */
+
+
+/* div:first-of-type div:nth-of-type(2){
+  color: red;
+} */
+
+/* div :not(h3,:first-child,:last-child){
+  color: red;
+} */

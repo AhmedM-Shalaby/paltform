@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.big {
+  background-color: #0069ff;
+  padding: 150px;
+}
+.parent {
+  width: 600px;
+  background-color: #fff;
+  margin: 40px auto;
+  padding: 15px;
+  border-radius: 10px;
+}
+.parent h4 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 30px;
+  padding: 10px;
+}
+.parent .container {
+  display: flex;
+  flex-direction: column;
+}
+.parent .container form input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 5px;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+}
+.parent .container form input:focus {
+  outline: none;
+}
+.parent .container form input::placeholder {
+  font-weight: bold;
+  color: #333;
+}
+.parent .container button {
+  padding: 15px;
+  background-color: #0069ff;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+}
+.parent .container p {
+  margin: 20px auto;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  position: relative;
+}
+.parent .container p::before {
+  content: "";
+  height: 1px;
+  width: 200px;
+  background-color: #aaa;
+  position: absolute;
+  left: -185%;
+  top: 12px;
+}
+.parent .container p::after {
+  content: "";
+  height: 1px;
+  width: 200px;
+  background-color: #aaa;
+  position: absolute;
+  right: -185%;
+  top: 12px;
+}
+.parent .social {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+  padding: 10px;
+}
+.parent .container .social button {
+  background-color: #f1f8ff;
+  color: #000;
+  border: 1px solid #9c9bdb;
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  font-weight: normal;
+}
+.parent .social i {
+  font-size: 22px;
+  color: #0069ff;
+}
+.parent .text {
+  text-align: center;
+  padding: 15px;
+  position: relative;
+}
+.parent .text div {
+  font-size: 18px;
+  font-weight: bold;
+}
+.parent .text p {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+  top: 150%;
+  color: #fff;
+}

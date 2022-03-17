@@ -1,0 +1,58 @@
+.parent{
+    background-color: black;
+    width: 1000px;
+
+}
+
+.parent div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: cyan;
+    text-align: center;
+    margin-left: 10px;
+    float: left;
+    margin-top: 10px;
+}
+
+.one{
+    width: calc((100% - 20px) / 1 );
+    
+}
+
+.two{
+    width: calc((100% - 40px) / 3 );
+
+}
+
+.three{
+    width: calc((100% - 30px) / 2 );
+    
+}
+
+.four{
+    width: calc((100% - 50px) / 4);
+    margin-bottom: 10px;
+
+}
+.clear{
+    clear: both;
+}
+
+.five,.six,.normal {
+    margin: 20px auto;
+    width: 300px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px;
+    background-color: rgb(102, 98, 98); /* Get The Background From Image */
+    color: black;
+}
+
+.five{
+    background-color: rgb(102, 98, 98, 0);
+
+}
+
+.six{
+    opacity: 0.1;
+}

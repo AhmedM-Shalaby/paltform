@@ -1,0 +1,220 @@
+*{
+    box-sizing: border-box;
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+::selection{
+    background-color: #333;
+    color: yellow;
+}
+
+body{
+    height: 5000px;
+}
+
+
+.parent-column{
+    width: 800px;
+height: 500px;
+background-color: #aaa;
+margin: 20px auto;
+display: grid;
+grid-template-columns: auto auto auto auto;
+}
+
+.parent-column div{
+    text-align: center;
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    font-size: 30px;
+}
+
+.parent-row{
+    width: 800px;
+    height: 500px;
+    background-color: #aaa;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 100px 300px 200px auto;
+    grid-template-rows: 100px auto 100px;
+    row-gap:10px ;
+    column-gap: 10px;
+    
+}
+
+.parent-row div{
+    text-align: center;
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    font-size: 30px;
+}
+
+
+.parent-content{
+    width: 800px;
+    height: 500px;
+    background-color: #aaa;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat( 3, auto);
+    row-gap:10px ; 
+    column-gap: 10px;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+
+.parent-content div{
+    text-align: center;
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    font-size: 30px;
+}
+
+.page{
+    display: grid;
+    height: 50vw;
+    background-color: #333;
+    grid-template-columns: repeat(10 ,1fr );
+grid-template-rows: 50px auto 50px;
+    grid-template-areas: "h2 h2 h2 nav nav nav nav nav nav nav"
+    "cont cont cont cont cont cont side side side side"
+    "foot foot foot foot foot foot foot foot foot foot";
+}
+
+ul{
+    list-style: none;
+    background-color: #464646;
+    color: #fff;
+}
+
+ul li{
+    display: inline-block;    
+    margin: 10px 50px;
+}
+
+
+h1{
+    grid-area: h2;
+    background-color: #aaa;
+    color: #fff;
+}
+
+nav{
+    grid-area: nav;
+}
+
+section{
+    grid-area: cont;
+    background-color: #998899;
+    color: #fff;
+}
+
+aside{
+    grid-area: side;
+    background-color: #787876;
+    color: #fff;
+}
+
+
+footer{
+    grid-area: foot;
+    color: #fff;
+}
+
+
+.frist-child{
+    width: 800px;
+    height: 500px;
+    background-color: #aaa;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(6 , 1fr);
+    gap: 10px 10px;
+}
+
+
+.frist-child div{
+    text-align: center;
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    font-size: 30px;
+}
+
+
+.head{
+    grid-column: span 6;
+}
+
+.body{
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+
+.grid{
+    width: 800px;
+    height: 500px;
+    background-color: #aaa;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(6 , 1fr);
+    gap: 10px 10px;
+}
+
+
+.grid div{
+    text-align: center;
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    font-size: 30px;
+}
+
+
+.area{
+    grid-area: 2/2/5/6;
+}
+
+
+.responsive{
+    height: 500px;
+    background-color: #aaa;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+}
+
+.responsive div{
+    text-align: center;
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    font-size: 30px;
+}
+
+
+/*
+  Grid
+  Parent 
+  - display: grid | inline-grid
+  - grid-template-columns: [Number Of Columns In] => [Px, %, Auto, Fraction, Repeat, Mix]
+  - grid-template-rows: [Number Of Rows In] => [Px, %, Auto, Fraction, Repeat, Mix]
+  - gap: [Row Gap] [Column Gap]
+  - justify-content
+  - align-content
+  - grid-template-areas
+  Child
+  - grid-column: [Grid-Column-Start] [Grid-Column-End]
+  - grid-row: [Grid-Row-Start] [Grid-Row-End]
+  - grid-area: [Grid-Row-Start] [Grid-Column-Start] [Grid-Row-End] [Grid-Column-End]
+  -responsive: [auto-fill] [minmax]
+  -el [auto-fill ( 3la 7sb el msa7h malw4 d3wa be 3wmyd aw columns )]
+*

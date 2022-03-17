@@ -1,0 +1,125 @@
+.one{
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    font-weight: bold;
+    padding: 40px;
+    margin: auto;
+}
+
+div:empty{
+    background-color: red;
+}
+
+
+.two{
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #d4d4d4;
+}
+
+
+.two::first-letter{
+    display: inline-block;
+    background-color: #f00;
+    color: #fff;
+    padding: 15px 10px;
+    margin-left: -35px;
+    margin-right: 10px;
+}
+
+.three{
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(163, 163, 163);
+}
+
+.three::first-letter{
+    display: inline-block;
+    margin-left: -55px;
+    margin-right: 10px;
+    background-color: red;
+    padding: 15px 10px;
+    color: #fff;
+}
+
+.four{
+    position: relative;
+    left: 250px;
+    width: 500px;
+    background-color: #6f6f6f;
+    padding: 10px;
+    border-left: 5px solid #333;
+}
+
+
+.four::before{
+    content: attr(data-person);
+    background-color: #9c9a9a;
+    position: absolute;
+    padding: 5px 10px 5px 10px;
+    display: inline-block;
+    width: 50px;
+    left: -110px;
+    
+}
+
+
+
+.four::after{
+    content: "";
+    width: 0px;
+    display: inline-block;
+    height: 0px;
+    background-color: transparent;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #333333 transparent transparent;
+    position: absolute;
+    left: -25px;
+}
+
+.six{
+    text-align: center;
+    counter-increment: frist;
+    background-color: #333;
+    color: white;
+    width: 350px;
+    padding: 15px;
+    position: relative;
+    left: 140px;
+    margin: 5px;
+}
+
+.six::before{
+    content: counter(frist);
+    display: inline-block;
+    background: #009688;
+    font-size: 40px;
+    width: 40px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    height: 49px;
+
+}
+
+.six::after{
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    background-color: #009688;
+    bottom: 0;
+
+}
+
+::selection{
+    background-color: #333;
+    color: yellow;
+}
